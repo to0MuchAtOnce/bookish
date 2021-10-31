@@ -14,7 +14,7 @@
   <header class="header" id="header">
     <div class="nav-wrapper">
       <div class="logo">
-        <svg class="logo" id="header-img" viewBox="0 0 133 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="logo-img" id="header-img" viewBox="0 0 133 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_11:2)">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M16.6667 22.63C18.5533 21.2686 21.4987 20.2456 24 20.0467V28.4154C21.6813 28.7551 18.9933 29.8414 16.6667 30.9987V22.63ZM15.3333 22.63C13.4467 21.2686 10.5013 20.2456 8 20.0467V28.4154C10.3187 28.7551 13.0067 29.8414 15.3333 30.9987V22.63ZM6.66667 26.3978C3.93467 25.5272 2.672 24.5417 2.672 24.5417L2.66667 21.926C2.656 19.1787 2.784 17.6067 6.19734 16.8769C9.93734 16.0774 13.9293 15.1758 11.852 12.329C6.65067 5.19508 10.7733 0 16 0C21.228 0 25.328 5.15504 20.1467 12.329C18.108 15.1513 21.9813 16.0593 25.8027 16.8769C29.2293 17.6106 29.3453 19.1903 29.332 21.9583L29.328 24.5417C29.328 24.5417 28.0653 25.5272 25.3333 26.3978V18.6439L23.8907 18.7589C21.152 18.9772 18.0773 20.0531 16 21.5075C13.9213 20.0531 10.8493 18.9772 8.10934 18.7589L6.66667 18.6439V26.3978Z"
@@ -65,13 +65,27 @@
   </header>
 
   <div class="main-wrapper">
-    <form action="#">
-      <h1 class="hero">Join our mailing list to get the latest <span>books</span> dropped into your inbox</h1>
-      <div class="search-bar">
-        <label id="email" for="email"></label>
-        <input type="email" id="email" placeholder="What would you like to read?">
-      </div>
-    </form>
+
+    <div class="hero-wrapper">
+      <span class="hero">Join our mailing list to get the latest <span class="hero-text-blue">books</span><br>
+        dropped
+        into your
+        inbox</span>
+
+      <form action="#">
+        <div class="search-bar-wrapper">
+          <label id="email" for="email"></label>
+          <input autocomplete="off" type="email" id="email" class="email-input"
+            placeholder="What would you like to read?">
+          <div class="search-btn"><svg class="search-btn-icon" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.35667 20L8.5125 13.8442C9.66917 14.5725 11.0325 15 12.5 15C16.6425 15 20 11.6425 20 7.5C20 3.3575 16.6425 0 12.5 0C8.3575 0 5 3.3575 5 7.5C5 8.9675 5.42833 10.3317 6.15583 11.4875L0 17.6433L2.35667 20ZM12.5 13.3333C9.28417 13.3333 6.66667 10.7167 6.66667 7.5C6.66667 4.28333 9.28417 1.66667 12.5 1.66667C15.7158 1.66667 18.3333 4.28333 18.3333 7.5C18.3333 10.7167 15.7158 13.3333 12.5 13.3333Z"
+                fill="#eee" />
+            </svg></div>
+        </div>
+      </form>
+    </div>
 
     <div class="cards">
       <div class="card card-one">
