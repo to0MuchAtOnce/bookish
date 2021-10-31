@@ -170,31 +170,103 @@ body {
   padding: 10px;
   margin: 20px;
   width: 300px;
-  height: 400px;
+  height: 300px;
+}
+
+.card-img {
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+}
+
+.card-para {
+  margin-top: 20px;
+  padding: 10px;
 }
 
 /* FOOTER */
-.footer-right {
-  display: flex;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
 }
 
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-left-small,
+.footer-right-small {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5babf5;
+  padding: 0 10px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 .social-links {
   display: flex;
   list-style: none;
+  padding: 0 10px;
 }
 
 .social-link {
   display: flex;
+  margin: 0 20px;
   width: 30px;
   height: 30px;
 }
 
+.apple-icon,
+.android-icon {
+  fill: #eee;
+  width: 30px;
+  height: 30px;
+}
+
+.btn {
+  color: #eee;
+  border: 0;
+  border-radius: 8px;
+  background: #5babf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.btn-text {
+  padding: 0 5px;
+}
+
+.btn:active {
+  color: #eee;
+  border: 0;
+  border-radius: 8px;
+  background: #5babf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  transform: scale(0.98);
+}
+
 @media screen and (max-width: 800px) {
+  /* NAV */
   .nav-links {
     display: none;
   }
@@ -205,5 +277,127 @@ body {
 
   .cards {
     flex-direction: column;
+  }
+
+  .search-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .email-input {
+    box-shadow: 4px 4px 6px rgba(95, 95, 95, 0.1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0;
+    padding: 20px;
+    width: 440px;
+    outline: 0;
+  }
+
+  .email-input:focus {
+    box-shadow: 0px 0px 20px rgba(125, 127, 128, 0.3);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0;
+    padding: 20px;
+    width: 440px;
+    outline: 0;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .card {
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero {
+    font-size: 23px;
+    margin: 0 30px;
+  }
+
+  .search-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .email-input {
+    box-shadow: 4px 4px 6px rgba(95, 95, 95, 0.1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0;
+    padding: 15px;
+    width: 360px;
+    outline: 0;
+  }
+
+  .email-input:focus {
+    box-shadow: 0px 0px 20px rgba(125, 127, 128, 0.3);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0;
+    padding: 15px;
+    width: 360px;
+    outline: 0;
+  }
+
+  .email-input::placeholder {
+    font-size: medium;
+  }
+
+  .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 6px rgba(95, 95, 95, 0.1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60px;
+    height: 45px;
+    background: #5babf5;
+  }
+
+  .search-btn:active {
+    background: #5babf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 6px rgba(95, 95, 95, 0.1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60px;
+    height: 45px;
+    transform: scale(0.98);
+  }
+
+  .search-btn-icon {
+    width: 28px;
+    height: 28px;
   }
 }
