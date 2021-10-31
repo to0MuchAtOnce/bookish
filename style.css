@@ -91,7 +91,28 @@ body {
   height: 400px;
 }
 
-@media screen and (max-width: 900px) {
+/* FOOTER */
+.footer-right {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 800px) {
   .nav-links {
     display: none;
   }
